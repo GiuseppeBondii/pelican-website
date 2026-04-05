@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pelican-website/static/css/main.17df76d2.css",
+    "main.js": "/pelican-website/static/js/main.f4faec1b.js",
+    "static/js/453.92127e0a.chunk.js": "/pelican-website/static/js/453.92127e0a.chunk.js",
+    "static/media/LOGO nero.png": "/pelican-website/static/media/LOGO nero.c5d0c5160d60adbb81f1.png",
+    "index.html": "/pelican-website/index.html",
+    "main.17df76d2.css.map": "/pelican-website/static/css/main.17df76d2.css.map",
+    "main.f4faec1b.js.map": "/pelican-website/static/js/main.f4faec1b.js.map",
+    "453.92127e0a.chunk.js.map": "/pelican-website/static/js/453.92127e0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17df76d2.css",
+    "static/js/main.f4faec1b.js"
+  ]
+}
