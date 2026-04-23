@@ -11,6 +11,7 @@ import Science from './components/pages/Science';
 import ForPatients from './components/pages/ForPatients';
 import Contributors from './components/pages/Contributors';
 import ContactUs from './components/pages/ContactUs';
+import NotFound from './page/NotFound';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
             <Route path="/patients" element={<ForPatients />} />
             <Route path="/contributors" element={<Contributors />} />
             <Route path="/contact" element={<ContactUs />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         

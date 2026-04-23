@@ -2,17 +2,23 @@
   --primary-white: #ffffff;
   --primary-black: #1a1a1a;
   
-  /* Nuova Palette California-inspired */
+  /* Palette California-inspired */
   --ocean-blue: #004b73;
   --sand: #F4E8D1;
   --sunset-orange: #FF6B4A;
   --highlight-lime: #C5E063;
   
-  --bg-gray: #f9f9f9;
+  --bg-gray: #f8fafc; /* Grigio leggermente più moderno e freddo */
   
   /* Gradienti Aggiornati */
-  --gradient-bg-light: linear-gradient(135deg, var(--sand) 0%, rgba(255, 107, 74, 0.1) 100%);
+  --gradient-bg-light: linear-gradient(135deg, var(--sand) 0%, rgba(255, 107, 74, 0.05) 100%);
   --gradient-accent: linear-gradient(135deg, var(--sunset-orange) 0%, var(--highlight-lime) 100%);
+
+  /* Nuove Variabili Stile Salient */
+  --salient-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  --salient-shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.12);
+  --radius-card: 16px;
+  --radius-pill: 50px;
 }
 
 * {
@@ -22,10 +28,12 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Font di sistema moderno, tipico dei temi premium */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--primary-white);
   color: var(--primary-black);
-  line-height: 1.6;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -41,49 +49,55 @@ img {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 100px 0; /* Aumentato per dare più respiro (tipico di Salient) */
 }
 
+/* Pulsanti stile Salient: Arrotondati, ombra morbida, hover fluido */
 .btn-accent {
   background: var(--sunset-orange);
   color: var(--primary-white);
-  padding: 12px 24px;
+  padding: 14px 32px;
   border: none;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
   text-transform: uppercase;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(255, 107, 74, 0.3);
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 8px 20px rgba(255, 107, 74, 0.25);
 }
 
 .btn-accent:hover {
-  background: var(--highlight-lime);
-  color: var(--ocean-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(197, 224, 99, 0.4);
+  background: var(--ocean-blue);
+  color: var(--primary-white);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 75, 115, 0.25);
 }
 
 h1, h2, h3 {
   margin-bottom: 20px;
+  font-weight: 800; /* Titoli più incisivi */
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   text-align: center;
   color: var(--ocean-blue);
 }
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .section {
-    padding: 50px 0;
+    padding: 70px 0;
   }
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease;
 }
