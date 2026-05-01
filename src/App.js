@@ -13,9 +13,16 @@ import Contributors from './components/pages/Contributors';
 import ContactUs from './components/pages/ContactUs';
 import NotFound from './page/NotFound';
 
+import ScrollObserver from './components/layout/ScrollObserver';
+import ScrollToTop from './components/layout/ScrollToTop';
+
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
+
+      <ScrollObserver />
+      <ScrollToTop />
+
       <div className="App" style={{ 
         display: 'flex', 
         flexDirection: 'column', 

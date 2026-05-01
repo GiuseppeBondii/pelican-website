@@ -1,15 +1,17 @@
 /* ==============================
-   NAVBAR
+   NAVBAR (MIGLIORATA)
 ============================== */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.98);
-  border-bottom: 1px solid rgba(0, 75, 115, 0.08); /* Bordo ammorbidito */
-  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 75, 115, 0.05);
+  padding: 12px 0; /* Ridotto per farla più "sleek" */
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Ombra leggera */
-  backdrop-filter: blur(10px);
+  box-shadow: var(--salient-shadow); /* Usiamo la tua ombra morbida */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
 }
 .nav-container {
   display: flex;
@@ -22,37 +24,77 @@
   align-items: center;
 }
 .nav-logo {
-  height: 50px;
+  height: 55px; /* Un po' più grande */
+  transition: transform 0.3s ease;
 }
+.nav-logo:hover {
+  transform: scale(1.03); /* Feedback al passaggio del mouse sul logo */
+}
+
+/* Stile Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   border: none;
   background: transparent;
-  gap: 5px;
+  gap: 6px;
   padding: 5px;
+  z-index: 1001; /* Resta sopra il menu a tendina */
 }
 .hamburger-line {
-  width: 25px;
+  width: 28px;
   height: 3px;
   background-color: var(--ocean-blue);
-  transition: all 0.3s ease;
-  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 4px;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 35px; /* Più spazio tra i link per un look arioso */
+  align-items: center;
 }
+
+/* Animazione Sottolineatura Link Desktop */
 .nav-link {
   font-weight: 600;
+  font-size: 0.95rem;
   cursor: pointer;
   color: var(--primary-black);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 8px 0;
   transition: color 0.3s ease;
 }
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--gradient-accent); /* Usa il tuo gradiente! */
+  transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 2px;
+}
+
 .nav-link:hover {
   color: var(--sunset-orange);
+}
+
+/* Attiva l'animazione al passaggio del mouse o se è la pagina attuale */
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%; 
+}
+
+/* Evidenzia il testo della pagina in cui ti trovi */
+.nav-link.active {
+  color: var(--ocean-blue); 
 }
 
 /* ==============================
@@ -340,8 +382,6 @@
     text-align: center;
     padding: 20px 0 10px 0;
     gap: 15px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    margin-top: 15px;
   }
   
   .nav-links.open { display: flex; animation: fadeIn 0.3s ease-in-out; }
@@ -496,6 +536,18 @@
   box-shadow: 0 0 0 6px var(--bg-gray); /* Nasconde la linea tratteggiata dietro */
 }
 
+/* Aggiungi una transizione fluida al pallino originale */
+.timeline-step::before {
+  transition: all 0.3s ease;
+}
+
+/* Quando la card va in hover, il pallino si illumina di arancione */
+.timeline-step:hover::before {
+  background-color: var(--sunset-orange);
+  box-shadow: 0 0 0 8px rgba(255, 107, 74, 0.2);
+  transform: scale(1.1);
+}
+
 .timeline-step h4 {
   color: var(--sunset-orange);
   margin-bottom: 10px;
@@ -569,6 +621,79 @@
   resize: vertical;
 }
 
+
+/* ==============================
+   RESPONSIVENESS (TABLET - iPad)
+============================== */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem; /* Riduciamo un po' il titolo gigante */
+  }
+  .hero {
+    padding: 120px 0; /* Meno spazio vuoto su tablet */
+  }
+  .page-title {
+    font-size: 3rem;
+  }
+  .numbers-grid, .contact-grid, .team-grid, .faq-grid {
+    gap: 20px; /* Riduciamo lo spazio tra le colonne per non farle schiacciare */
+  }
+  .text-box {
+    padding: 40px; /* Riduciamo i margini interni delle card */
+  }
+  .footer-content {
+    gap: 20px;
+  }
+
+  .nav-header { width: 100%; }
+  .hamburger { display: flex; }
+  
+  .hamburger.open .hamburger-line:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+  .hamburger.open .hamburger-line:nth-child(2) { opacity: 0; transform: translateX(-10px); }
+  .hamburger.open .hamburger-line:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
+
+  /* Il Menu a tendina fluido */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-white);
+    text-align: center;
+    padding: 0;
+    gap: 0;
+    max-height: 0; /* Altezza 0 di default = nascosto */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Ombra profonda sotto il menu */
+    transition: max-height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), padding 0.3s ease;
+  }
+  
+  /* Quando clicchi hamburger, l'altezza diventa sufficiente per mostrare i link */
+  .nav-links.open { 
+    max-height: 450px; 
+    padding: 0px 0 20px 0;
+    border-top: none
+  }
+
+  .nav-link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Spegniamo la riga animata su mobile, è scomoda da toccare */
+  .nav-link::after { display: none; }
+  
+  /* Su mobile la pagina attiva viene evidenziata con uno sfondo */
+  .nav-link.active {
+    background-color: var(--bg-gray);
+    color: var(--sunset-orange);
+  }
+}
+
+
 /* ==============================
    RESPONSIVENESS (PAGINE INTERNE)
 ============================== */
@@ -577,7 +702,94 @@
   .page-header { padding: 60px 0; }
   .text-box { padding: 30px; }
   .contact-grid, .team-grid, .faq-grid { grid-template-columns: 1fr; }
-  .timeline::before { left: 20px; }
-  .timeline-step::before { left: -30px; }
-  .timeline { padding-left: 20px; }
+
+  .hero { padding: 80px 20px; } /* Più respiro laterale */
+  .hero-title { font-size: 2.4rem; line-height: 1.2; }
+  .hero-subtitle { font-size: 1.1rem; margin-bottom: 30px; }
+  
+  .page-header { padding: 60px 20px; }
+  .page-title { font-size: 2.2rem; }
+  
+  .text-box { 
+    padding: 25px 20px; /* Spazio prezioso recuperato su schermi piccoli */
+    margin-bottom: 25px;
+  }
+  
+  .number-value { font-size: 3rem; }
+  
+  /* Sistema la timeline per mobile in modo che non sbordi */
+  .timeline { padding-left: 15px; border-left-width: 1px; }
+  .timeline-step::before { left: -21px; width: 14px; height: 14px; box-shadow: 0 0 0 4px var(--bg-gray); }
+  .timeline-step { padding: 20px; }
+
+  .nav-container { flex-direction: column; align-items: flex-start; }
+  .nav-header { width: 100%; }
+  .hamburger { display: flex; }
+  
+  .hamburger.open .hamburger-line:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+  .hamburger.open .hamburger-line:nth-child(2) { opacity: 0; transform: translateX(-10px); }
+  .hamburger.open .hamburger-line:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
+
+
+
+  /* Il Menu a tendina fluido */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-white);
+    text-align: center;
+    padding: 0;
+    gap: 0;
+    max-height: 0; /* Altezza 0 di default = nascosto */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Ombra profonda sotto il menu */
+    transition: max-height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), padding 0.3s ease;
+  }
+  
+  /* Quando clicchi hamburger, l'altezza diventa sufficiente per mostrare i link */
+  .nav-links.open { 
+    max-height: 450px; 
+    padding: 0px 0 0px 0;
+    border-top: none
+  }
+
+  .nav-link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Spegniamo la riga animata su mobile, è scomoda da toccare */
+  .nav-link::after { display: none; }
+  
+  /* Su mobile la pagina attiva viene evidenziata con uno sfondo */
+  .nav-link.active {
+    background-color: var(--bg-gray);
+    color: var(--sunset-orange);
+  }
+
+}
+
+/* ==============================
+   PAGE TRANSITION (FADE IN)
+============================== */
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    /* Opzionale: un piccolissimo movimento dal basso per renderlo più dinamico */
+    transform: translateY(10px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  /* L'animazione dura mezzo secondo ed è molto fluida */
+  animation: pageFadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }

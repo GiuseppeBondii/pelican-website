@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logoPelican from '../../assets/LOGO/LOGO nero.png'; 
 
 const Navbar = () => {
@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="container nav-container">
         
         <div className="nav-header">
+          {/* Manteniamo Link per il logo */}
           <Link to="/" onClick={closeMenu}>
             <img src={logoPelican} alt="PELICAN Logo" className="nav-logo" />
           </Link>
@@ -29,12 +30,13 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-          <li><Link to="/" className="nav-link" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/project" className="nav-link" onClick={closeMenu}>The Project</Link></li>
-          <li><Link to="/science" className="nav-link" onClick={closeMenu}>Science</Link></li>
-          <li><Link to="/patients" className="nav-link" onClick={closeMenu}>For Patients</Link></li>
-          <li><Link to="/contributors" className="nav-link" onClick={closeMenu}>Contributors</Link></li>
-          <li><Link to="/contact" className="nav-link" onClick={closeMenu}>Contact Us</Link></li>
+          {/* Usiamo NavLink per i collegamenti: aggiungerà la classe "active" in automatico */}
+          <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Home</NavLink></li>
+          <li><NavLink to="/project" className="nav-link" onClick={closeMenu}>The Project</NavLink></li>
+          <li><NavLink to="/science" className="nav-link" onClick={closeMenu}>Science</NavLink></li>
+          <li><NavLink to="/patients" className="nav-link" onClick={closeMenu}>For Patients</NavLink></li>
+          <li><NavLink to="/contributors" className="nav-link" onClick={closeMenu}>Contributors</NavLink></li>
+          <li><NavLink to="/contact" className="nav-link" onClick={closeMenu}>Contact Us</NavLink></li>
         </ul>
         
       </div>
