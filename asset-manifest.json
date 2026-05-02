@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pelican-website/static/css/main.253531d6.css",
-    "main.js": "/pelican-website/static/js/main.e023d8d8.js",
-    "static/js/453.92127e0a.chunk.js": "/pelican-website/static/js/453.92127e0a.chunk.js",
-    "static/media/LOGO nero.png": "/pelican-website/static/media/LOGO nero.c5d0c5160d60adbb81f1.png",
-    "index.html": "/pelican-website/index.html",
-    "main.253531d6.css.map": "/pelican-website/static/css/main.253531d6.css.map",
-    "main.e023d8d8.js.map": "/pelican-website/static/js/main.e023d8d8.js.map",
-    "453.92127e0a.chunk.js.map": "/pelican-website/static/js/453.92127e0a.chunk.js.map"
+    "main.css": "/static/css/main.253531d6.css",
+    "main.js": "/static/js/main.99560fb3.js",
+    "static/js/453.92127e0a.chunk.js": "/static/js/453.92127e0a.chunk.js",
+    "static/media/LOGO nero.png": "/static/media/LOGO nero.c5d0c5160d60adbb81f1.png",
+    "index.html": "/index.html",
+    "main.253531d6.css.map": "/static/css/main.253531d6.css.map",
+    "main.99560fb3.js.map": "/static/js/main.99560fb3.js.map",
+    "453.92127e0a.chunk.js.map": "/static/js/453.92127e0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.253531d6.css",
-    "static/js/main.e023d8d8.js"
+    "static/js/main.99560fb3.js"
   ]
 }
