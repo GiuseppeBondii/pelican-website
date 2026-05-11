@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.af270f0d.css",
-    "main.js": "/static/js/main.ebda1784.js",
+    "main.js": "/static/js/main.f089dde7.js",
     "static/js/453.92127e0a.chunk.js": "/static/js/453.92127e0a.chunk.js",
     "static/media/LOGO nero.png": "/static/media/LOGO nero.c5d0c5160d60adbb81f1.png",
     "index.html": "/index.html",
     "main.af270f0d.css.map": "/static/css/main.af270f0d.css.map",
-    "main.ebda1784.js.map": "/static/js/main.ebda1784.js.map",
+    "main.f089dde7.js.map": "/static/js/main.f089dde7.js.map",
     "453.92127e0a.chunk.js.map": "/static/js/453.92127e0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af270f0d.css",
-    "static/js/main.ebda1784.js"
+    "static/js/main.f089dde7.js"
   ]
 }
