@@ -90,6 +90,7 @@
           "Il PSMA (Prostate-Specific Membrane Antigen) è una proteina che si trova in quantità molto elevate sulla superficie delle cellule tumorali del carcinoma della prostata.",
           "Questo significa che il PSMA può essere utilizzato come una sorta di “bersaglio molecolare”: i radiofarmaci utilizzati negli esami PET possono legarsi al PSMA e renderne visibile la presenza nel corpo."
         ],
+        "listLabel": "In altre parole:",
         "list": [
           "Il PSMA è un marcatore molto specifico del tumore della prostata;",
           "Permette di localizzare il tumore anche quando è presente in piccole quantità;",
@@ -102,38 +103,24 @@
           "La PET/CT PSMA è un esame di imaging che combina due informazioni:"
         ],
         "list": [
-          "PET: Mostra come funziona il tessuto e dove si concentra il radiofarmaco legato al PSMA.",
-          "TC (TAC): Mostra la struttura anatomica del corpo."
-        ],
-        "howItWorksTitle": "Come si esegue l’esame:",
-        "howItWorks": [
           {
-            "step": "Iniezione del radiofarmaco PSMA (68Ga-PSMA-11, 18F-PSMA-1007 o 18F-DCFPyL)",
-            "desc": "È una quantità molto piccola di sostanza radioattiva, sicura e con un’esposizione paragonabile ad altre PET. Serve per permettere al radiofarmaco di distribuirsi nel corpo."
+            "label": "PET",
+            "text": "Mostra come funziona il tessuto e dove si concentra il radiofarmaco legato al PSMA."
           },
           {
-            "step": "Acquisizione dell’esame",
-            "desc": "Il lettino della PET si muove lentamente. Il paziente deve rimanere disteso e immobile. Non si avvertono dolore né fastidio."
-          },
-          {
-            "step": "Fine dell’esame",
-            "desc": "Si può tornare subito a casa. Si consiglia di idratarsi per facilitare l’eliminazione del radiofarmaco."
+            "label": "TC (TAC)",
+            "text": "Mostra la struttura anatomica del corpo."
           }
         ],
-        "warningTitle": "Cosa NON comporta l’esame:",
-        "warnings": [
-          "Non provoca dolore",
-          "Non richiede anestesia",
-          "Non richiede preparazioni complesse",
-          "Non lascia residui radioattivi pericolosi per la famiglia"
-        ]
+        "conclusion": "L’esame dura solitamente 60–90 minuti e si svolge in più fasi. Viene iniettata una quantità molto piccola di sostanza radioattiva, sicura e con un’esposizione paragonabile ad altre PET. Durante l'acquisizione, il lettino si muove lentamente e il paziente deve rimanere disteso e immobile. Non si avvertono dolore né fastidio.",
+        "warningLabel": "Cosa NON comporta l’esame:",
+        "warningText": "Non provoca dolore, non richiede anestesia, non richiede preparazioni complesse e non lascia residui radioattivi pericolosi per la famiglia."
       },
       "whyPelican": {
         "title": "3. Perché viene condotto lo studio PELICAN?",
         "paragraphs": [
           "Lo studio PELICAN nasce perché oggi abbiamo molte nuove terapie efficaci per il carcinoma prostatico avanzato, ma non esiste ancora uno strumento preciso per capire in anticipo quali pazienti risponderanno meglio a una determinata terapia, quali hanno una malattia più aggressiva e quali potrebbero beneficiare di strategie terapeutiche personalizzate.",
-          "La PET PSMA è molto precisa nel “vedere” il tumore, ma non sappiamo ancora se la quantità di malattia visibile alla PET può prevedere la risposta alla terapia; e se parametri come SUVmax, numero di lesioni o volume tumorale PSMA-positivo possono predire la sopravvivenza e la progressione della malattia.",
-          "PELICAN vuole rispondere a queste domande, studiando in modo prospettico e multicentrico oltre 1.300 pazienti in tutta Italia."
+          "La PET PSMA è molto precisa nel “vedere” il tumore, ma non sappiamo ancora se la quantità di malattia visibile può prevedere la risposta alla terapia. PELICAN vuole rispondere a queste domande studiando in modo prospettico e multicentrico oltre 1.300 pazienti in tutta Italia."
         ]
       },
       "whoCanParticipate": {
@@ -142,7 +129,7 @@
         "inclusion": [
           "È un uomo con età ≥18 anni;",
           "Ha una diagnosi di carcinoma della prostata;",
-          "Deve iniziare una nuova terapia sistemica (ormonale, chemio, PARP-inibitore, radioterapia o radioligand therapy con ¹⁷⁷Lu-PSMA-617);",
+          "Deve iniziare una nuova terapia sistemica (ormonale, chemio, PARP-inibitore, ecc.);",
           "Esegue una PET PSMA prima di iniziare la terapia;",
           "Firma il consenso informato."
         ],
@@ -152,44 +139,90 @@
           "Ha un tumore prostatico con componente neuroendocrina importante;",
           "Ha un altro tumore attivo (tranne i carcinomi cutanei non melanomatosi)."
         ],
-        "note": "Nota: Questi criteri sono semplificati. In ogni caso, lo staff medico valuterà sempre l’idoneità del paziente."
+        "note": "Nota: Questi criteri sono semplificati. Lo staff medico valuterà sempre l’idoneità del paziente."
       },
       "timeline": {
         "title": "5. Cosa comporta partecipare allo studio?",
-        "desc": "Ecco un percorso chiaro e rassicurante su cosa succederà.",
+        "desc": "Lo studio non modifica la tua terapia (che sarà scelta unicamente dal tuo medico secondo le linee guida). Osserva semplicemente i risultati nel tempo.",
         "steps": [
-          { "title": "Step 1 – Valutazione iniziale", "desc": "Il medico valuta se il paziente può partecipare (criteri di inclusione ed esclusione). Si riceve una spiegazione dettagliata dello studio e si firma il consenso informato." },
-          { "title": "Step 2 – PET PSMA “baseline”", "desc": "Prima di iniziare la terapia sistemica, si effettua una PET PSMA (esame che comunque sarebbe indicato clinicamente nella maggior parte dei casi)." },
-          { "title": "Step 3 – Inizio della terapia sistemica", "desc": "Il paziente inizia il trattamento scelto dal suo oncologo/urologo (ormonoterapia, chemioterapia, PARP-inibitori, radioterapia o radioligand therapy con ¹⁷⁷Lu-PSMA). Le decisioni terapeutiche non vengono influenzate dallo studio. Lo studio osserva, non modifica il trattamento." },
-          { "title": "Step 4 – Follow-up clinico", "desc": "Per circa 24 mesi vengono raccolti: valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo, informazioni sui sintomi e sullo stato di salute." },
-          { "title": "Step 5 – Eventuale PET PSMA di rivalutazione", "desc": "A seconda del centro e della disponibilità clinica, una PET PSMA può essere ripetuta: alla fine del trattamento oppure se c’è il sospetto di progressione." },
-          { "title": "Step 6 – Fine follow-up / raccolta dati", "desc": "Dopo almeno 24 mesi, i dati raccolti vengono analizzati in forma anonimizzata." }
+          {
+            "title": "Step 1 – Valutazione iniziale",
+            "desc": "Il medico valuta l'idoneità, spiega lo studio in modo dettagliato e si firma il consenso informato."
+          },
+          {
+            "title": "Step 2 – PET PSMA “baseline”",
+            "desc": "Prima di iniziare la terapia sistemica, si effettua una PET PSMA."
+          },
+          {
+            "title": "Step 3 – Inizio della terapia sistemica",
+            "desc": "Il paziente inizia il trattamento scelto dal suo oncologo/urologo. Lo studio osserva, non modifica in alcun modo il trattamento clinico."
+          },
+          {
+            "title": "Step 4 – Follow-up clinico",
+            "desc": "Per circa 24 mesi vengono raccolti valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo e informazioni sullo stato di salute."
+          },
+          {
+            "title": "Step 5 – Eventuale PET PSMA di rivalutazione",
+            "desc": "A seconda del centro e della disponibilità, una PET PSMA può essere ripetuta alla fine del trattamento o se c’è il sospetto di progressione."
+          },
+          {
+            "title": "Step 6 – Fine follow-up / Raccolta dati",
+            "desc": "Dopo almeno 24 mesi, i dati raccolti vengono analizzati in forma rigorosamente anonimizzata."
+          }
         ]
       },
       "risksPrivacy": {
         "title": "6. Rischi, sicurezza e privacy",
         "list": [
-          "Rischi connessi alla PET: La PET PSMA utilizza una bassa quantità di radioattività. I rischi sono simili a quelli di altre PET e generalmente considerati molto bassi.",
-          "Sicurezza del radiofarmaco: I radiofarmaci impiegati vengono eliminati naturalmente con le urine. Si raccomanda di bere abbondantemente dopo l’esame e di evitare il contatto stretto con neonati e donne in gravidanza per alcune ore.",
-          "Sicurezza del trattamento: Lo studio non modifica la terapia del paziente: le cure sono decise unicamente dal medico curante secondo le linee guida.",
-          "Privacy: Tutti i dati vengono raccolti in forma pseudonimizzata, caricati su piattaforma protetta (REDCap) e analizzati in modo centralizzato garantendo la massima sicurezza.",
-          "Partecipazione volontaria: Il paziente può ritirarsi in qualsiasi momento, senza alcun impatto sulle cure. Non ci sono costi aggiuntivi o obblighi. La PET pre-trattamento è quella già prevista dal percorso clinico."
+          {
+            "label": "Rischi connessi alla PET",
+            "text": "Utilizza una bassa quantità di radioattività, i rischi sono considerati molto bassi. Si raccomanda di bere abbondantemente dopo l’esame e di evitare il contatto stretto con neonati e donne in gravidanza per alcune ore."
+          },
+          {
+            "label": "Sicurezza del trattamento",
+            "text": "Lo studio NON modifica in alcun modo la terapia decisa dal tuo medico curante."
+          },
+          {
+            "label": "Privacy",
+            "text": "Tutti i dati vengono raccolti in forma pseudonimizzata, caricati su una piattaforma sicura (REDCap) e analizzati nel massimo rispetto della privacy."
+          },
+          {
+            "label": "Partecipazione volontaria",
+            "text": "Il paziente può ritirarsi dallo studio in qualsiasi momento, senza che questo abbia il minimo impatto sulle sue cure mediche. Non vi sono costi aggiuntivi."
+          }
         ]
       },
       "faq": {
         "title": "7. Domande Frequenti (FAQ)",
         "items": [
-          { "q": "La PET PSMA fa male?", "a": "No. L’esame è indolore." },
-          { "q": "È pericolosa la radioattività?", "a": "La quantità è bassa e paragonabile ad altre PET. I benefici clinici superano i rischi." },
-          { "q": "Devo rimanere in ospedale?", "a": "No, l’esame è ambulatoriale." },
-          { "q": "Lo studio cambia la mia terapia?", "a": "Assolutamente no. La terapia è stabilita esclusivamente dal medico curante." },
-          { "q": "Posso ritirarmi dallo studio?", "a": "Sì, in qualsiasi momento e senza conseguenze sulle cure." },
-          { "q": "I miei dati sono al sicuro?", "a": "Sì, vengono trattati in forma anonima e caricati su piattaforme protette." },
-          { "q": "Posso partecipare se ho altri problemi di salute?", "a": "Lo valuterà il team medico caso per caso." }
+          {
+            "q": "La PET PSMA fa male?",
+            "a": "No. L’esame è totalmente indolore."
+          },
+          {
+            "q": "È pericolosa la radioattività?",
+            "a": "La quantità è bassa e paragonabile ad altre PET. I benefici clinici superano di gran lunga i rischi."
+          },
+          {
+            "q": "Devo rimanere in ospedale?",
+            "a": "No, l’esame si svolge in regime ambulatoriale."
+          },
+          {
+            "q": "Lo studio cambia la mia terapia?",
+            "a": "Assolutamente no. La terapia viene stabilita esclusivamente dal medico curante."
+          },
+          {
+            "q": "Posso ritirarmi dallo studio?",
+            "a": "Sì, in qualsiasi momento e senza alcuna conseguenza sul tuo normale percorso di cura."
+          },
+          {
+            "q": "I miei dati sono al sicuro?",
+            "a": "Sì, i dati vengono trattati in forma anonima e conservati su piattaforme digitali protette e sicure."
+          }
         ]
       }
     }
-  },
+},
   "science": {
     "header": {
       "title": "Science (For Researchers)",

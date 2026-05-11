@@ -8,7 +8,7 @@ import NewsSection from './NewsSection';
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero /> {/*TODO: aggiungere Project Manager: Maria Vadalà*/}, {/*TODO: link/siti utili*/}
       <ProjectSummary />
       <KeyNumbers />
       <MapCenters />

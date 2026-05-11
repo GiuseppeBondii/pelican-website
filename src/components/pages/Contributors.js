@@ -29,8 +29,8 @@ const Contributors = () => {
             <p style={{ color: 'var(--ocean-blue)', fontWeight: 'bold' }}>{contributors.footer}</p>
           </div>
         </div>
-      </section> {/*TODO: aggiungere Project Manager: Maria Vadalà*/}
-    </div>
+      </section> 
+    </div>       
   );
 };
 
