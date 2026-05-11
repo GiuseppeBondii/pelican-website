@@ -1,21 +1,16 @@
 import React from 'react';
+import data from '../../data/pelicanData.json';
 
 const MapCenters = () => {
-  const centers = [
-    { city: 'Bologna', role: 'Centro Coordinatore' },
-    { city: 'Cuneo', role: 'Centro Partecipante' },
-    { city: 'Genova', role: 'Centro Partecipante' },
-    { city: 'Messina', role: 'Centro Partecipante' }
-  ];
+  const { mapCenters } = data.home;
 
   return (
     <section className="section">
       <div className="container">
-        <h2>Centri Partecipanti</h2>
+        <h2>{mapCenters.title}</h2>
         <div className="centers-list">
-          {centers.map((center, idx) => (
+          {mapCenters.centers.map((center, idx) => (
             <div key={idx} className="center-item">
-              {/* Il dot ora usa il colore Highlight Lime */}
               <span className="center-dot"></span>
               <div>
                 <h4 className="center-city">{center.city}</h4>

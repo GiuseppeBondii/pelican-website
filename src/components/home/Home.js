@@ -19,6 +19,3 @@ const Home = () => {
 
 export default Home;
 
-//TODO: quando carico e ricarico la pagina mi da error 404
-//      devo fare una pagina di error 404
-//      condividere ad Andrea

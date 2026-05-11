@@ -105,6 +105,10 @@
   color: var(--primary-white);
   padding: 160px 0; /* Spaziatura premium */
   text-align: center;
+
+  background-image: var(--gradient-bg-light);
+  background-blend-mode: overlay;
+
   position: relative;
 }
 .hero::after {
@@ -138,7 +142,7 @@
 }
 .btn-secondary {
   background-color: transparent;
-  color: var(--primary-white);
+  color: var(--sunset-orange);
   padding: 14px 32px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius-pill); /* Arrotondato come btn-accent */
@@ -158,7 +162,7 @@
    PROJECT SUMMARY
 ============================== */
 .summary-section {
-  background: var(--gradient-bg-light);
+  /*background: var(--gradient-bg-light);*/
   text-align: center;
 }
 .summary-content {
@@ -793,3 +797,110 @@
   /* L'animazione dura mezzo secondo ed è molto fluida */
   animation: pageFadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
+/* Definizioni Keyframes (Invariate) */
+        @keyframes heroFadeInScale {
+          from { opacity: 0; transform: scale(0.96) translateY(20px); }
+          to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes iconPulse {
+          0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 102, 153, 0.2); } /* Pulse blu tenue */
+          70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(0, 102, 153, 0); }
+          100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 102, 153, 0); }
+        }
+
+        /* --- CORREZIONE COLORI HERO --- */
+        .hero {
+          /* SFONDO BIANCO */
+          
+          /* Pattern SVG scuro (opacità molto bassa) su fondo bianco */
+          background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          padding: 160px 0 120px; /* Spaziatura generosa */
+        }
+
+        /* --- CORREZIONE COLORE TITOLO E DESCRIZIONE --- */
+        .hero h1 {
+          font-weight: 800;
+          margin-bottom: 15px;
+        }
+
+        .p-main-desc {
+          max-width: 800px;
+          margin: 0 auto 70px;
+          font-size: 1.2rem;
+          line-height: 1.8;
+          opacity: 0.85;
+        }
+
+        /* --- ANIMAZIONI D'INGRESSO (Invariate) --- */
+        .hero.observed .hero-content { animation: heroFadeInScale 1.2s ease-out forwards; opacity: 0; }
+        .hero.observed .hero-grid-item.patients { animation: heroFadeInScale 1s ease-out 0.3s forwards; opacity: 0; }
+        .hero.observed .hero-grid-item.researchers { animation: heroFadeInScale 1s ease-out 0.6s forwards; opacity: 0; }
+
+        /* --- STILE SCHEDE E HOVER (Invariati) --- */
+        .hero-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 40px;
+        }
+
+        .hero-grid-item {
+          background: var(--primary-white);
+          border-radius: var(--radius-card );
+          padding: 40px;
+          color: var(--ocean-blue);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          border-radius: 20px;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06); /* Ombra leggera */
+          border: 1px solid rgba(0,0,0,0.03);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .hero-grid-item:hover {
+          transform: translateY(-10px) scale(1.02);
+          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Stile Icone e Pulse */
+        .hero-icon {
+          animation: iconPulse 2.5s infinite ease-in-out;
+          transition: animation-play-state 0.3s ease;
+          display: inline-flex;
+          color: var(--ocean-blue);
+          padding: 20px;
+          border-radius: 50%;
+          background-color: rgba(0, 102, 153, 0.1); /* Sfondo icona tenue */
+          margin-bottom: 25px;
+        }
+
+        .hero-grid-item:hover .hero-icon { animation-play-state: paused; }
+        
+        .hero-grid-item h3 {
+          color: var(--ocean-blue);
+          margin-bottom: 15px;
+          font-weight: 700;
+        }
+        
+        .hero-card-body p {
+          color: var(--text-dark);
+          opacity: 0.9;
+          margin-bottom: 20px;
+          font-size: 1.05rem;
+        }
+
+        .hero-card-body ul {
+          text-align: left;
+          color: var(--text-dark);
+          opacity: 0.8;
+          margin-bottom: 30px;
+          padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+          .hero { padding: 120px 0 80px; }
+          .hero-grid { gap: 30px; }
+          .hero-grid-item { padding: 30px; }
+        }
