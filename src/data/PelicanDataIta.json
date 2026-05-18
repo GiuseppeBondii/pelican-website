@@ -1,14 +1,14 @@
 {
   "contactUs": {
     "header": {
-      "title": "Contact Us",
+      "title": "Contattaci",
       "subtitle": "Mettiti in contatto con il team di coordinamento."
     },
     "coordination": {
       "title": "Coordinamento Studio",
-      "piLabel": "Study Coordinator (PI):",
+      "piLabel": "Coordinatore dello studio (PI):",
       "piName": "Dr. Andrea Farolfi",
-      "coPiLabel": "Vice-Coordinator:",
+      "coPiLabel": "Vice-Coordinatore:",
       "coPiName": "Dr. Andrea Di Giorgio",
       "pmLabel": "Project Manager:",
       "pmName": "Maria Vadalà",
@@ -51,28 +51,29 @@
   },
   "contributors": {
     "header": {
-      "title": "Contributors",
+      "title": "Collaboratori",
       "subtitle": "I centri di ricerca e i referenti che partecipano al progetto PELICAN."
     },
     "centers": [
       {
         "city": "Bologna",
-        "role": "Coordinating Center",
-        "pi": "Dr. Andrea Farolfi (PI), Dr. Andrea Di Giorgio (Co-PI), Dr. Riccardo Mei (Co-PI)"
+        "role": "Centro Coordinatore",
+        "pi": "Dr. Andrea Farolfi (PI), Dr. Andrea Di Giorgio (Co-PI), Dr. Riccardo Mei (Co-PI)",
+        "Project Manager": "Maria Vadalà"
       },
       {
         "city": "Cuneo",
-        "role": "Participant Center",
+        "role": "Centro Partecipante",
         "pi": "Dr. Virginia Liberini"
       },
       {
         "city": "Genova",
-        "role": "Participant Center",
+        "role": "Centro Partecipante",
         "pi": "Dr. Matteo Bauckneht"
       },
       {
         "city": "Messina",
-        "role": "Participant Center",
+        "role": "Centro Partecipante",
         "pi": "Dr. Riccardo Laudicella"
       }
     ],
@@ -112,15 +113,13 @@
             "text": "Mostra la struttura anatomica del corpo."
           }
         ],
-        "conclusion": "L’esame dura solitamente 60–90 minuti e si svolge in più fasi. Viene iniettata una quantità molto piccola di sostanza radioattiva, sicura e con un’esposizione paragonabile ad altre PET. Durante l'acquisizione, il lettino si muove lentamente e il paziente deve rimanere disteso e immobile. Non si avvertono dolore né fastidio.",
-        "warningLabel": "Cosa NON comporta l’esame:",
-        "warningText": "Non provoca dolore, non richiede anestesia, non richiede preparazioni complesse e non lascia residui radioattivi pericolosi per la famiglia."
+        "conclusion": "L’esame dura solitamente 60–90 minuti e si svolge in più fasi. Viene iniettata una quantità molto piccola di sostanza radioattiva, sicura e con un’esposizione paragonabile ad altre PET. Durante l'acquisizione, il lettino si muove lentamente e il paziente deve rimanere disteso e immobile. Non si avvertono dolore né fastidio."
       },
       "whyPelican": {
         "title": "3. Perché viene condotto lo studio PELICAN?",
         "paragraphs": [
           "Lo studio PELICAN nasce perché oggi abbiamo molte nuove terapie efficaci per il carcinoma prostatico avanzato, ma non esiste ancora uno strumento preciso per capire in anticipo quali pazienti risponderanno meglio a una determinata terapia, quali hanno una malattia più aggressiva e quali potrebbero beneficiare di strategie terapeutiche personalizzate.",
-          "La PET PSMA è molto precisa nel “vedere” il tumore, ma non sappiamo ancora se la quantità di malattia visibile può prevedere la risposta alla terapia. PELICAN vuole rispondere a queste domande studiando in modo prospettico e multicentrico oltre 1.300 pazienti in tutta Italia."
+          "La PET PSMA permette di “vedere” le localizzazioni tumorali che esprimono PSMA, ma non è ancora chiaro se le immagini PET possono fornire anche altre informazioni preziose. La nostra ipotesi è che la PET PSMA fornisca già alcuni indizi per capire se il paziente risponderà o meno a determinate terapie e di carattere prognostico.”"
         ]
       },
       "whoCanParticipate": {
@@ -139,7 +138,7 @@
           "Ha un tumore prostatico con componente neuroendocrina importante;",
           "Ha un altro tumore attivo (tranne i carcinomi cutanei non melanomatosi)."
         ],
-        "note": "Nota: Questi criteri sono semplificati. Lo staff medico valuterà sempre l’idoneità del paziente."
+        "note": "Nota: questi sono criteri di massima. Il medico deve sempre visitare di persona il paziente e valutare l’idoneità a partecipare allo studio."
       },
       "timeline": {
         "title": "5. Cosa comporta partecipare allo studio?",
@@ -155,53 +154,32 @@
           },
           {
             "title": "Step 3 – Inizio della terapia sistemica",
-            "desc": "Il paziente inizia il trattamento scelto dal suo oncologo/urologo. Lo studio osserva, non modifica in alcun modo il trattamento clinico."
+            "desc": "Il paziente inizia il trattamento scelto dal suo oncologo/urologo. La natura dello studio è osservazionale, non modifica in alcun modo il trattamento."
           },
           {
             "title": "Step 4 – Follow-up clinico",
-            "desc": "Per circa 24 mesi vengono raccolti valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo e informazioni sullo stato di salute."
+            "desc": "Per circa 24 mesi vengono raccolti valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo e informazioni sullo stato di salute… tutto secondo la normale pratica clinica"
           },
           {
             "title": "Step 5 – Eventuale PET PSMA di rivalutazione",
             "desc": "A seconda del centro e della disponibilità, una PET PSMA può essere ripetuta alla fine del trattamento o se c’è il sospetto di progressione."
           },
           {
-            "title": "Step 6 – Fine follow-up / Raccolta dati",
-            "desc": "Dopo almeno 24 mesi, i dati raccolti vengono analizzati in forma rigorosamente anonimizzata."
-          }
-        ]
-      },
-      "risksPrivacy": {
-        "title": "6. Rischi, sicurezza e privacy",
-        "list": [
-          {
-            "label": "Rischi connessi alla PET",
-            "text": "Utilizza una bassa quantità di radioattività, i rischi sono considerati molto bassi. Si raccomanda di bere abbondantemente dopo l’esame e di evitare il contatto stretto con neonati e donne in gravidanza per alcune ore."
-          },
-          {
-            "label": "Sicurezza del trattamento",
-            "text": "Lo studio NON modifica in alcun modo la terapia decisa dal tuo medico curante."
-          },
-          {
-            "label": "Privacy",
-            "text": "Tutti i dati vengono raccolti in forma pseudonimizzata, caricati su una piattaforma sicura (REDCap) e analizzati nel massimo rispetto della privacy."
-          },
-          {
-            "label": "Partecipazione volontaria",
-            "text": "Il paziente può ritirarsi dallo studio in qualsiasi momento, senza che questo abbia il minimo impatto sulle sue cure mediche. Non vi sono costi aggiuntivi."
+            "title": "Step 6 – Raccolta dati",
+            "desc": "I dati vengono raccolti in forma rigorosamente anonimizzata."
           }
         ]
       },
       "faq": {
-        "title": "7. Domande Frequenti (FAQ)",
+        "title": "6. Domande Frequenti (FAQ)",
         "items": [
           {
             "q": "La PET PSMA fa male?",
-            "a": "No. L’esame è totalmente indolore."
+            "a": "No. L’esame è totalmente indolore; viene però somministrata una piccola quantità di tracciante radioattivo tramite iniezione in una vena periferica (in genere braccio o mano)."
           },
           {
             "q": "È pericolosa la radioattività?",
-            "a": "La quantità è bassa e paragonabile ad altre PET. I benefici clinici superano di gran lunga i rischi."
+            "a": "La quantità è bassa e paragonabile ad altre PET. Il rapporto rischio/beneficio verrà valutato dal medico che propone al paziente lo studio e verrà spiegato al paziente."
           },
           {
             "q": "Devo rimanere in ospedale?",
@@ -225,44 +203,43 @@
 },
   "science": {
     "header": {
-      "title": "Science (For Researchers)",
-      "subtitle": "Technical documentation and protocol guidelines for investigators.",
+      "title": "Area Scientifica",
+      "subtitle": "TDocumentazione tecnica e linee guida del protocollo per i ricercatori.",
       "disclaimer": "mi sono preso alcune libertà per completare un po la facciata della pagina, ovviamente da sistemare"
     },
     "techDocs": {
-      "title": "Technical Documentation & Imaging",
+      "title": "Documentazione Tecnica e Diagnostica per Immagini",
       "list": [
-        { "label": "Data Management", "text": "I dati clinici saranno raccolti mediante piattaforma REDCap (pseudonymized data and DICOM upload)." },
-        { "label": "PET Parameters", "text": "Estrazione di parametri semiquantitativi, tra cui SUVmax, SUVmean, MTV (volume tumorale totale PSMA-positivo) e numero di lesioni. È prevista un'analisi centralizzata presso il centro di Bologna." },
+        { "label": "Gestione Dati", "text": "I dati clinici saranno raccolti mediante piattaforma REDCap (pseudonymized data and DICOM upload)." },
+        { "label": "Parametri PET", "text": "Estrazione di parametri semiquantitativi, tra cui SUVmax, SUVmean, MTV (volume tumorale totale PSMA-positivo) e numero di lesioni. È prevista un'analisi centralizzata presso il centro di Bologna." },
         { "label": "Radiotraccianti Ammessi", "text": "[68Ga]Ga-PSMA-11, [18F]-DCFPyL, [18F]-PSMA-1007, [18F]-rhPSMA-7.3, [18F]-JK-PSMA-7." },
-        { "label": "Statistical Model", "text": "L’analisi prevede correlazioni tra parametri PET e outcome clinici, con modelli predittivi e stratificazioni basate su tipo di terapia e carico tumorale." },
-        { "label": "TODO: da togliere", "text": "Full list of variables available from Protocol Version 1.1 (7 Oct 2025)." }
+        { "label": "Modello Statistico", "text": "L’analisi prevede correlazioni tra parametri PET e outcome clinici, con modelli predittivi e stratificazioni basate su tipo di terapia e carico tumorale." }
       ]
     },
     "collateral": {
-      "title": "Collateral & Exploratory Cohorts",
+      "title": "Coorti Collaterali ed Esplorative",
       "list": [
-        { "label": "Dynamic Total Body PET", "text": "Analisi cinetiche del tracciante utilizzando un tomografo PET Total Body (FOV=194cm)." },
-        { "label": "Conventional Imaging", "text": "Confronto PET vs scintigrafia ossea + TC." },
+        { "label": "PET Total Body Dinamica", "text": "Analisi cinetiche del tracciante utilizzando un tomografo PET Total Body (FOV=194cm)." },
+        { "label": "Imaging Convenzionale", "text": "Confronto PET vs scintigrafia ossea + TC." },
         { "label": "SPECT/CT post-177Lu-PSMA", "text": "Studio della distribuzione del radiofarmaco." },
         { "label": "Nadir PET", "text": "Valutazione PET baseline, nadir e fine trattamento/progressione." }
       ]
     },
     "policies": {
-      "title": "Publication Rules & Authorship Policy",
+      "title": "Regole di Pubblicazione e Policy sulle Authorship",
       "list": [
-        { "label": "Authorship Policy", "text": "Detailed point system for contributions. Il riconoscimento delle authorship sarà basato su un sistema a punti che riflette il contributo effettivo di ciascun centro (es. numero di pazienti arruolati, qualità dei dati inseriti)." },
-        { "label": "Publication Rules", "text": "Le proposte di pubblicazione o presentazione di dati parziali o ancillari devono essere preventivamente approvate dal comitato direttivo dello studio." }
+        { "label": "Policy sulle Authorship", "text": "Sistema a punti dettagliato per i contributi. Il riconoscimento delle authorship sarà basato su un sistema a punti che riflette il contributo effettivo di ciascun centro (es. numero di pazienti arruolati, qualità dei dati inseriti)." },
+        { "label": "Regole di Pubblicazione", "text": "Le proposte di pubblicazione o presentazione di dati parziali o ancillari devono essere preventivamente approvate dal comitato direttivo dello studio." }
       ]
     }
   },
   "theProject": {
     "header": {
-      "title": "The Project",
+      "title": "Il Progetto",
       "subtitle": "Dettagli scientifici e struttura dello studio PELICAN (Protocollo V1.1)"
     },
     "intro": {
-      "title": "1. Introduction",
+      "title": "1. Introduzione",
       "paragraphs": [
         "Il carcinoma della prostata rappresenta la seconda neoplasia più frequente nell’uomo e una delle principali cause di mortalità oncologica a livello globale. Negli ultimi anni, l’introduzione di nuovi trattamenti sistemici – tra cui inibitori del recettore degli androgeni (abiraterone, enzalutamide, apalutamide, darolutamide), chemioterapia (docetaxel, cabazitaxel), PARP inibitori e radioligand therapy con 177Lu-PSMA-617 – ha modificato profondamente la gestione terapeutica dei pazienti affetti da malattia avanzata.",
         "La valutazione accurata della risposta a tali terapie rimane però una sfida clinica. Gli strumenti tradizionali presentano limiti importanti: il PSA sierico può essere inattendibile in diversi scenari clinici (es.fenomeno flare, malattia a bassa secrezione di PSA, metastasi viscerali), mentre l’imaging convenzionale (TC, RM, scintigrafia ossea) mostra sensibilità e specificità insufficienti.",
@@ -285,13 +262,13 @@
       "flowchartPlaceholder": "[Qua ho capito ci dovrebbe andare lo Study Design Flowchart]",
       "ethicsLabel": "Approvazione:",
       "ethicsText": "Lo studio è approvato dal Comitato Etico AVEC (737/2024/Oss/AOUBo).",
-      "linkText": "View on ClinicalTrials.gov ➔"
+      "linkText": "Vedi su ClinicalTrials.gov ➔"
     },
     "objectives": {
-      "title": "3. Objectives",
-      "primaryTitle": "Primary Objective",
+      "title": "3. Obbiettivi",
+      "primaryTitle": "Obbiettivo Primario",
       "primaryDesc": "Determinare il valore prognostico dei parametri PET PSMA (numero lesioni, volume tumorale totale, SUVmax, SUVmean) per identificare pazienti con prognosi favorevole vs sfavorevole in termini di sopravvivenza a 24 mesi.",
-      "secondaryTitle": "Secondary Objectives",
+      "secondaryTitle": "Obbiettivi Secondari",
       "secondaryList": [
         "Identificare fattori predittivi di risposta.",
         "Analizzare bPFS, rPFS e OS a 24 mesi.",
@@ -299,7 +276,7 @@
       ]
     },
     "population": {
-      "title": "4. Study Population",
+      "title": "4.Popolazione dello studio",
       "inclusion": {
         "title": "Inclusione",
         "items": [
@@ -389,5 +366,71 @@
         }
       ]
     }
+  },
+  "links": {
+    "title": "Links",
+    "subtitle": "Esplora pagine consigliate e risorse utili.",
+    "fallbackText": "Nessun link disponibile al momento.",
+    "links": {
+      "promisePet": "https://promise-pet.org",
+      "aronwg": "https://aronwg.com",
+      "recip-criteria": "https://www.recip-criteria.com",
+      "uroweb": "https://uroweb.org/guidelines/prostate-cancer",
+      "aospBo": "https://www.aosp.bo.it"
+    }
+  },
+  "Flowchart":{
+    "summary": "Schema sintetico delle fasi di screening, trattamento e monitoraggio.",
+    "step1":"Fase di screening",
+    "step2_1":"PET PSMA",
+    "step2_2":"PSA",
+    "step3":"Inizio trattamento",
+    "step4_1":"PSA",
+    "step4_2":"(ogni 4 settimane)",
+    "step5":"PET PSMA in caso di sospetta progressione (PSA e/o clinica)",
+    "step6_1":"PET PSMA ",
+    "step6_2":"dopo 6 mesi dall'inizio<",
+    "step6_3":"PSA",
+    "step7": "Follow-up"
+  },
+  "footer": {
+    "title": "PELICAN Project",
+    "txt_1": "Studio osservazionale, prospettico, multicentrico e no-profit. Valutazione del ruolo della PET PSMA nella risposta alle terapie sistemiche del carcinoma prostatico.",
+    "title_contacts": "Contatti Rapidi",
+    "txt_2": "<strong> Centro Coordinatore: </strong> Bologna <br /> <strong> PI: </strong> Dr. Andrea Farolfi<br /> <strong>Email Pazienti:</strong> info@pelicanproject.it",
+    "txt_3": "PELICAN Research. Tutti i diritti riservati. <br /> Approvato dal Comitato Etico AVEC (737/2024/Oss/AOUBo)."
+  },
+  "navbar": {
+    "logoAlt": "PELICAN Logo",
+    "links": [
+      {
+        "to": "/",
+        "label": "Home"
+      },
+      {
+        "to": "/project",
+        "label": "Progetto"
+      },
+      {
+        "to": "/science",
+        "label": "Ricercatori"
+      },
+      {
+        "to": "/patients",
+        "label": "Pazienti"
+      },
+      {
+        "to": "/contributors",
+        "label": "Collaboratori"
+      },
+      {
+        "to": "/links",
+        "label": "Link Amici"
+      },
+      {
+        "to": "/contact",
+        "label": "Contattaci"
+      }
+    ]
   }
 }

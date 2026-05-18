@@ -1,0 +1,437 @@
+{
+  "contactUs": {
+    "header": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with the coordination team."
+    },
+    "coordination": {
+      "title": "Study Coordination",
+      "piLabel": "Study Coordinator (PI):",
+      "piName": "Dr. Andrea Farolfi",
+      "coPiLabel": "Vice-Coordinator:",
+      "coPiName": "Dr. Andrea Di Giorgio",
+      "pmLabel": "Project Manager:",
+      "pmName": "Maria Vadalà",
+      "pmEmail": "maria.vadala@aosp.bo.it",
+      "locationLabel": "Location:",
+      "location": "Bologna, Italy"
+    },
+    "patients": {
+      "title": "For Patients",
+      "desc": "Do you have questions about the study or want to know if you can participate?",
+      "emailLabel": "Email:",
+      "email": "info@pelicanproject.it"
+    },
+    "placeholders": {
+      "imageTeam": "[ Team photo goes here as per guidelines ]"
+    },
+    "form": {
+      "title": "Send a message",
+      "desc": "Fill out the form below, we will reply as soon as possible.",
+      "successTitle": "Message sent successfully!",
+      "successDesc": "Thank you for contacting us. The team will receive your request shortly.",
+      "btnAnother": "Send another message",
+      "errorMsg": "An error occurred. Please try again later.",
+      "inputs": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "message": "Write your message here..."
+      },
+      "select": {
+        "default": "Select a topic...",
+        "patient": "I am a patient / family member",
+        "researcher": "I am a researcher / physician",
+        "other": "Other"
+      },
+      "buttons": {
+        "sending": "Sending...",
+        "submit": "Send Message"
+      }
+    }
+  },
+  "contributors": {
+    "header": {
+      "title": "Contributors",
+      "subtitle": "The research centers and contacts participating in the PELICAN project."
+    },
+    "centers": [
+      {
+        "city": "Bologna",
+        "role": "Coordinating Center",
+        "pi": "Dr. Andrea Farolfi (PI), Dr. Andrea Di Giorgio (Co-PI), Dr. Riccardo Mei (Co-PI)",
+        "Project Manager": "Maria Vadalà"
+      },
+      {
+        "city": "Cuneo",
+        "role": "Participant Center",
+        "pi": "Dr. Virginia Liberini"
+      },
+      {
+        "city": "Genoa",
+        "role": "Participant Center",
+        "pi": "Dr. Matteo Bauckneht"
+      },
+      {
+        "city": "Messina",
+        "role": "Participant Center",
+        "pi": "Dr. Riccardo Laudicella"
+      }
+    ],
+    "footer": "Possibility of adding new centers according to protocol-defined criteria."
+  },
+  "forPatients": {
+    "header": {
+      "title": "Patients Area",
+      "subtitle": "What PSMA PET is and what it means to participate in the PELICAN study."
+    },
+    "sections": {
+      "psma": {
+        "title": "1. What is PSMA?",
+        "paragraphs": [
+          "PSMA (Prostate-Specific Membrane Antigen) is a protein found in very high amounts on the surface of prostate cancer cells.",
+          "This means that PSMA can be used as a kind of 'molecular target': radiopharmaceuticals used in PET scans can bind to PSMA and make its presence visible in the body."
+        ],
+        "listLabel": "In other words:",
+        "list": [
+          "PSMA is a highly specific marker for prostate cancer;",
+          "It allows localizing the tumor even when present in small amounts;",
+          "It allows seeing the disease in locations not always evaluable with CT, MRI, or bone scintigraphy."
+        ]
+      },
+      "petPsma": {
+        "title": "2. What is a PSMA PET and what should I expect?",
+        "paragraphs": [
+          "PSMA PET/CT is an imaging exam that combines two pieces of information:"
+        ],
+        "list": [
+          {
+            "label": "PET",
+            "text": "Shows how the tissue functions and where the PSMA-bound radiopharmaceutical concentrates."
+          },
+          {
+            "label": "CT",
+            "text": "Shows the anatomical structure of the body."
+          }
+        ],
+        "conclusion": "The exam usually lasts 60–90 minutes and takes place in multiple phases. A very small amount of radioactive substance is injected, which is safe and has exposure comparable to other PET scans. During the acquisition, the bed moves slowly and the patient must remain lying down and still. No pain or discomfort is felt."
+      },
+      "whyPelican": {
+        "title": "3. Why is the PELICAN study being conducted?",
+        "paragraphs": [
+          "The PELICAN study was created because today we have many new effective therapies for advanced prostate cancer, but there is still no precise tool to understand in advance which patients will respond better to a certain therapy, which have a more aggressive disease, and which could benefit from personalized therapeutic strategies.",
+          "PSMA PET allows us to 'see' tumor locations that express PSMA, but it is not yet clear whether PET images can also provide other valuable information. Our hypothesis is that PSMA PET already provides some clues to understand if the patient will respond or not to certain therapies and has prognostic value."
+        ]
+      },
+      "whoCanParticipate": {
+        "title": "4. Who can participate?",
+        "inclusionLabel": "Those who can participate:",
+        "inclusion": [
+          "Are male, aged ≥18 years;",
+          "Have a diagnosis of prostate cancer;",
+          "Must start a new systemic therapy (hormonal, chemo, PARP-inhibitor, etc.);",
+          "Undergo a PSMA PET before starting therapy;",
+          "Sign the informed consent."
+        ],
+        "exclusionLabel": "Those who cannot participate:",
+        "exclusion": [
+          "Cannot lie still for the PET scan;",
+          "Have a prostate tumor with a significant neuroendocrine component;",
+          "Have another active tumor (except non-melanoma skin cancers)."
+        ],
+        "note": "Note: these are general criteria. The doctor must always visit the patient in person and assess their eligibility to participate in the study."
+      },
+      "timeline": {
+        "title": "5. What does participating in the study involve?",
+        "desc": "The study does not alter your therapy (which will be chosen solely by your doctor according to guidelines). It simply observes the results over time.",
+        "steps": [
+          {
+            "title": "Step 1 – Initial evaluation",
+            "desc": "The doctor evaluates eligibility, explains the study in detail, and signs the informed consent."
+          },
+          {
+            "title": "Step 2 – Baseline PSMA PET",
+            "desc": "Before starting systemic therapy, a PSMA PET is performed."
+          },
+          {
+            "title": "Step 3 – Start of systemic therapy",
+            "desc": "The patient starts the treatment chosen by their oncologist/urologist. The nature of the study is observational, it does not modify the treatment in any way."
+          },
+          {
+            "title": "Step 4 – Clinical follow-up",
+            "desc": "For about 24 months, PSA values, blood tests, radiological exams, any check-up visits, and health status information are collected... all according to normal clinical practice."
+          },
+          {
+            "title": "Step 5 – Possible re-evaluation PSMA PET",
+            "desc": "Depending on the center and availability, a PSMA PET can be repeated at the end of the treatment or if there is a suspicion of progression."
+          },
+          {
+            "title": "Step 6 – Data collection",
+            "desc": "Data is collected in a strictly anonymized form."
+          }
+        ]
+      },
+      "faq": {
+        "title": "6. Frequently Asked Questions (FAQ)",
+        "items": [
+          {
+            "q": "Does PSMA PET hurt?",
+            "a": "No. The exam is totally painless; however, a small amount of radioactive tracer is administered via injection into a peripheral vein (usually arm or hand)."
+          },
+          {
+            "q": "Is radioactivity dangerous?",
+            "a": "The amount is low and comparable to other PET scans. The risk/benefit ratio will be evaluated by the doctor proposing the study to the patient and will be explained to them."
+          },
+          {
+            "q": "Do I have to stay in the hospital?",
+            "a": "No, the exam is performed on an outpatient basis."
+          },
+          {
+            "q": "Does the study change my therapy?",
+            "a": "Absolutely not. The therapy is established exclusively by the treating physician."
+          },
+          {
+            "q": "Can I withdraw from the study?",
+            "a": "Yes, at any time and without any consequence on your normal care path."
+          },
+          {
+            "q": "Is my data safe?",
+            "a": "Yes, the data is treated anonymously and stored on protected and secure digital platforms."
+          }
+        ]
+      }
+    }
+  },
+  "science": {
+    "header": {
+      "title": "Science (For Researchers)",
+      "subtitle": "Technical documentation and protocol guidelines for investigators.",
+      "disclaimer": "[Note: I took some liberties to complete the page layout, obviously to be adjusted]"
+    },
+    "techDocs": {
+      "title": "Technical Documentation & Imaging",
+      "list": [
+        { "label": "Data Management", "text": "Clinical data will be collected via the REDCap platform (pseudonymized data and DICOM upload)." },
+        { "label": "PET Parameters", "text": "Extraction of semi-quantitative parameters, including SUVmax, SUVmean, MTV (PSMA-positive total metabolic tumor volume), and number of lesions. Centralized analysis at the Bologna center is planned." },
+        { "label": "Allowed Radiotracers", "text": "[68Ga]Ga-PSMA-11, [18F]-DCFPyL, [18F]-PSMA-1007, [18F]-rhPSMA-7.3, [18F]-JK-PSMA-7." },
+        { "label": "Statistical Model", "text": "The analysis involves correlations between PET parameters and clinical outcomes, with predictive models and stratifications based on therapy type and tumor burden." },
+        { "label": "TODO: to be removed", "text": "Full list of variables available from Protocol Version 1.1 (7 Oct 2025)." }
+      ]
+    },
+    "collateral": {
+      "title": "Collateral & Exploratory Cohorts",
+      "list": [
+        { "label": "Dynamic Total Body PET", "text": "Kinetic analyses of the tracer using a Total Body PET tomograph (FOV=194cm)." },
+        { "label": "Conventional Imaging", "text": "Comparison of PET vs bone scintigraphy + CT." },
+        { "label": "SPECT/CT post-177Lu-PSMA", "text": "Study of the radiopharmaceutical distribution." },
+        { "label": "Nadir PET", "text": "Evaluation of baseline, nadir, and end-of-treatment/progression PET." }
+      ]
+    },
+    "policies": {
+      "title": "Publication Rules & Authorship Policy",
+      "list": [
+        { "label": "Authorship Policy", "text": "Detailed point system for contributions. Authorship recognition will be based on a point system reflecting the actual contribution of each center (e.g., number of enrolled patients, quality of entered data)." },
+        { "label": "Publication Rules", "text": "Proposals for publication or presentation of partial or ancillary data must be previously approved by the study steering committee." }
+      ]
+    }
+  },
+  "theProject": {
+    "header": {
+      "title": "The Project",
+      "subtitle": "Scientific details and structure of the PELICAN study (Protocol V1.1)"
+    },
+    "intro": {
+      "title": "1. Introduction",
+      "paragraphs": [
+        "Prostate cancer represents the second most frequent malignancy in men and one of the leading causes of oncological mortality globally. In recent years, the introduction of new systemic treatments – including androgen receptor inhibitors (abiraterone, enzalutamide, apalutamide, darolutamide), chemotherapy (docetaxel, cabazitaxel), PARP inhibitors, and radioligand therapy with 177Lu-PSMA-617 – has profoundly modified the therapeutic management of patients with advanced disease.",
+        "The accurate evaluation of the response to such therapies remains a clinical challenge. Traditional tools present significant limitations: serum PSA can be unreliable in various clinical scenarios (e.g., flare phenomenon, low PSA-secreting disease, visceral metastases), while conventional imaging (CT, MRI, bone scintigraphy) shows insufficient sensitivity and specificity.",
+        "PET with PSMA-directed tracers, on the other hand, has shown high diagnostic accuracy in the staging and recurrence of prostate cancer. However, its role in assessing response to systemic therapies, although promising, has not yet been prospectively defined."
+      ]
+    },
+    "funding": {
+      "title": "Funding and Acknowledgments",
+      "paragraphs": [
+        "The PELICAN study has been selected for funding under the <strong>“Targeted Research Call 2024” of the Ministry of Health</strong>, dedicated to supporting independent research projects with high clinical impact.",
+        "This recognition underlines the scientific and clinical value of the study at the national level and confirms its relevance in the context of oncological research and nuclear medicine, with particular reference to the role of PSMA PET in evaluating therapeutic response."
+      ]
+    },
+    "design": {
+      "title": "2. Study Design",
+      "paragraphs": [
+        "PELICAN is an observational, prospective, multicenter, and non-profit study. Enrollment is consecutive, lasting 6 years, with a minimum follow-up of 24 months for each patient and an overall study duration of 9 years.",
+        "Therapeutic decisions remain completely independent of the study: patients will be treated according to international EAU–EANM–ESTRO–ESUR–SIOG guidelines."
+      ],
+      "flowchartPlaceholder": "[ Study Design Flowchart should go here ]",
+      "ethicsLabel": "Approval:",
+      "ethicsText": "The study is approved by the AVEC Ethics Committee (737/2024/Oss/AOUBo).",
+      "linkText": "View on ClinicalTrials.gov ➔"
+    },
+    "objectives": {
+      "title": "3. Objectives",
+      "primaryTitle": "Primary Objective",
+      "primaryDesc": "Determine the prognostic value of PSMA PET parameters (number of lesions, total tumor volume, SUVmax, SUVmean) to identify patients with a favorable vs. unfavorable prognosis in terms of 24-month survival.",
+      "secondaryTitle": "Secondary Objectives",
+      "secondaryList": [
+        "Identify predictive factors of response.",
+        "Analyze bPFS, rPFS, and OS at 24 months.",
+        "Evaluate PSMA-positive tumor volume and SUV as prognostic/predictive biomarkers."
+      ]
+    },
+    "population": {
+      "title": "4. Study Population",
+      "inclusion": {
+        "title": "Inclusion",
+        "items": [
+          "Male sex ≥18 years.",
+          "Histological diagnosis of prostate cancer.",
+          "Indication for a new line of systemic therapy.",
+          "Execution of pre-treatment PSMA PET.",
+          "Informed consent."
+        ]
+      },
+      "exclusion": {
+        "title": "Exclusion",
+        "items": [
+          "Inability to maintain a supine position.",
+          "Significant neuroendocrine component.",
+          "Other concomitant neoplasm (excluding non-melanoma skin carcinoma)."
+        ]
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "PELICAN Study",
+      "description": "A prospective multicenter study on the use of PSMA PET/CT for assessing therapy response in metastatic prostate cancer.",
+      "patientsCard": {
+        "title": "For Patients",
+        "description": "Discover how to participate in the study and what the benefits of PSMA PET are.",
+        "list": [
+          "Study information",
+          "Inclusion criteria",
+          "Participating centers"
+        ],
+        "buttonText": "Learn more"
+      },
+      "researchersCard": {
+        "title": "For Researchers",
+        "description": "Access protocol details, scientific documentation, and how to participate.",
+        "list": [
+          "Study Protocol (V1.1)",
+          "Objectives and Endpoints",
+          "Abstracts and publications"
+        ],
+        "buttonText": "Scientific Area"
+      }
+    },
+    "projectSummary": {
+      "title": "The Project",
+      "description": "PELICAN is an observational, prospective, multicenter, and non-profit study. Enrollment is consecutive, lasting 6 years, with a minimum follow-up of 24 months per patient and a total study duration of 9 years. It aims to determine the prognostic value of PSMA PET parameters and identify patients with favorable or unfavorable prognoses in response to new systemic therapies.",
+      "linkText": "View the study on ClinicalTrials.gov (NCT07089550) ➔",
+      "ethicsApproval": "The study is approved by the AVEC Ethics Committee (737/2024/Oss/AOUBo)."
+    },
+    "keyNumbers": {
+      "title": "Key Numbers",
+      "items": [
+        { "value": "1300+", "label": "Target Patients" },
+        { "value": "9 Years", "label": "Overall Duration" },
+        { "value": "24 Months", "label": "Minimum Follow-up" },
+        { "value": "4", "label": "Participating Centers" }
+      ]
+    },
+    "mapCenters": {
+      "title": "Participating Centers",
+      "centers": [
+        { "city": "Bologna", "role": "Coordinating Center" },
+        { "city": "Cuneo", "role": "Participant Center" },
+        { "city": "Genoa", "role": "Participant Center" },
+        { "city": "Messina", "role": "Participant Center" }
+      ]
+    },
+    "newsSection": {
+      "title": "Latest News",
+      "news": [
+        {
+          "date": "May 2026",
+          "title": "AIMN National Congress - Bari",
+          "description": "Preliminary data from the PELICAN study will be presented by <strong>Dr. Andrea Di Giorgio</strong>. This is the first presentation of the study's results."
+        },
+        {
+          "date": "March 2026",
+          "title": "Targeted Research: Funded Project",
+          "description": "The PELICAN project was selected by the <strong>Ministry of Health</strong> under the Targeted Research call, dedicated to independent research projects with high clinical impact."
+        },
+        {
+          "date": "January 2025",
+          "title": "Protocol V1.1 Publication",
+          "description": "Approval completed by the AVEC Ethics Committee. Official start of the enrollment phase."
+        }
+      ]
+    }
+  },
+  "links": {
+    "title": "Links",
+    "subtitle": "Explore recommended pages and useful resources.",
+    "fallbackText": "No links available at the moment.",
+    "links": {
+      "promisePet": "https://promise-pet.org",
+      "aronwg": "https://aronwg.com",
+      "recip-criteria": "https://www.recip-criteria.com",
+      "uroweb": "https://uroweb.org/guidelines/prostate-cancer",
+      "aospBo": "https://www.aosp.bo.it"
+    }
+  },
+  "Flowchart":{
+    "summary": "Summary diagram of screening, treatment, and monitoring phases.",
+    "step1":"Screening phase",
+    "step2_1":"PSMA PET",
+    "step2_2":"PSA",
+    "step3":"Start of treatment",
+    "step4_1":"PSA",
+    "step4_2":"(every 4 weeks)",
+    "step5":"PSMA PET in case of suspected progression (PSA and/or clinical)",
+    "step6_1":"PSMA PET",
+    "step6_2":"6 months after start",
+    "step6_3":"PSA",
+    "step7": "Follow-up"
+  },
+  "footer": {
+    "title": "PELICAN Project",
+    "txt_1": "Observational, prospective, multicenter, and non-profit study. Evaluation of the role of PSMA PET in response to systemic therapies for prostate cancer.",
+    "title_contacts": "Quick Contacts",
+    "txt_2": "<strong> Coordinating Center: </strong> Bologna <br /> <strong> PI: </strong> Dr. Andrea Farolfi<br /> <strong>Patient Email:</strong> info@pelicanproject.it",
+    "txt_3": "PELICAN Research. All rights reserved. <br /> Approved by the AVEC Ethics Committee (737/2024/Oss/AOUBo)."
+  },
+  "navbar": {
+    "logoAlt": "PELICAN Logo",
+    "links": [
+      {
+        "to": "/",
+        "label": "Home"
+      },
+      {
+        "to": "/project",
+        "label": "The Project"
+      },
+      {
+        "to": "/science",
+        "label": "Science"
+      },
+      {
+        "to": "/patients",
+        "label": "For Patients"
+      },
+      {
+        "to": "/contributors",
+        "label": "Contributors"
+      },
+      {
+        "to": "/links",
+        "label": "Friend Links"
+      },
+      {
+        "to": "/contact",
+        "label": "Contact Us"
+      }
+    ]
+  }
+}
