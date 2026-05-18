@@ -1,7 +1,10 @@
-import React from 'react';
-import data from '../../data/pelicanData.json';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
+  import Flowchart from '../layout/Flowchart';
 
 const TheProject = () => {
+  const { data } = useContext(LanguageContext);
+
   const { theProject } = data;
 
   return (
@@ -36,8 +39,8 @@ const TheProject = () => {
               <p key={index}>{p}</p>
             ))}
             
-            <div style={{ margin: '30px 0', padding: '40px', border: '2px dashed var(--highlight-lime)', textAlign: 'center', backgroundColor: 'var(--sand)', borderRadius: '8px' }}>
-                <p style={{ color: 'var(--ocean-blue)', fontWeight: 'bold' }}><em>{theProject.design.flowchartPlaceholder}</em></p>
+            <div style={{ margin: '30px 0', padding: '40px', textAlign: 'center', borderRadius: '8px' }}>
+                    <Flowchart></Flowchart>
             </div>
 
             <p><strong>{theProject.design.ethicsLabel}</strong> {theProject.design.ethicsText}</p>

@@ -1,7 +1,7 @@
-import React from 'react';
-import data from '../../data/pelicanData.json';
-
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 const MapCenters = () => {
+  const { data } = useContext(LanguageContext);
   const { mapCenters } = data.home;
 
   return (

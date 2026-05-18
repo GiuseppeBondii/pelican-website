@@ -904,3 +904,195 @@
           .hero-grid { gap: 30px; }
           .hero-grid-item { padding: 30px; }
         }
+
+/* ==============================
+   ANIMAZIONI HERO LOGO
+============================== */
+.hero-section {
+  position: relative;
+  overflow: hidden; /* Fondamentale per non far sbordare il logo gigante */
+}
+
+/* Il Watermark di Sfondo */
+.hero-bg-watermark {
+  position: absolute;
+  top: -10%;
+  right: -15%;
+  width: 800px; /* Molto grande */
+  max-width: 120%;
+  opacity: 0.12; /* Molto trasparente, regola a piacimento */
+  z-index: 1;
+  pointer-events: none; /* Impedisce che l'immagine blocchi i click sui bottoni sottostanti */
+  user-select: none;
+}
+
+/* Animazione Fluttuante Morbida */
+.floating-animation {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg) scale(1); }
+  50% { transform: translateY(-30px) rotate(3deg) scale(1.02); }
+  100% { transform: translateY(0px) rotate(0deg) scale(1); }
+}
+
+/* Il Logo Principale in cima */
+.hero-main-logo {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  display: block;
+  opacity: 0; /* Inizialmente invisibile per l'animazione */
+}
+
+/* Animazione di entrata dal basso verso l'alto */
+.fade-in-up {
+  animation: fadeInUpHero 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeInUpHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility per nascondere il testo H1 mantenendolo leggibile agli screen reader (SEO) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-watermark {
+    width: 500px;
+    right: -20%;
+    top: 5%;
+  }
+  .hero-main-logo {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+}
+/* ==============================
+   ANIMAZIONE STRUTTURALE NAVBAR (DESKTOP)
+============================== */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Gestione fluida dello spazio del Logo */
+  .nav-logo-link {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    max-width: 180px; /* Dimensione effettiva del logo quando visibile */
+    transition: max-width 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+                opacity 0.4s ease,
+                transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  /* Quando il logo scompare, collassa a larghezza 0 esatta */
+  .nav-logo-link.hidden {
+    max-width: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+  }
+
+  /* Configurazione base dei Link per la distribuzione */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: auto; /* Pinge il blocco a destra non appena si restringe */
+    justify-content: space-between; /* Distribuisce i link lungo tutto lo spazio disponibile */
+    transition: max-width 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    gap: 0; /* Gestito nativamente dal space-between */
+  }
+
+  /* STATO INIZIALE: Il logo non c'è, i link si allargano al 100% del container */
+  .nav-without-logo .nav-links {
+    max-width: 100%;
+  }
+
+  /* STATO SCROLLATO: Entra il logo, i link riducono l'area massima e scivolano a destra */
+  .nav-with-logo .nav-links {
+    max-width: 840px; /* Regola questo valore in pixel per decidere quanto compatti vuoi i link a destra */
+  }
+
+  .lang-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin-left: 15px;
+}
+
+.active-lang {
+  color: var(--sunset-orange);
+  transition: color 0.3s ease;
+}
+
+.inactive-lang {
+  color: var(--primary-black);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.inactive-lang:hover {
+  opacity: 1;
+  color: var(--ocean-blue);
+}
+
+@media (max-width: 1024px) {
+  .lang-toggle-btn {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+/* ==============================
+   SEPARATORI NAVBAR (SOLO DESKTOP)
+============================== */
+@media (min-width: 1025px) {
+  /* Impostiamo la posizione relativa per i list-item, escluso l'ultimo (il tasto lingua) */
+  .nav-links > li:not(:last-child) {
+    position: relative;
+  }
+
+  .nav-links > li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -35px; /* Sposta la linea fuori dal link, verso destra */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 14px; /* Altezza della linea divisoria */
+    width: 1px; /* Spessore della linea */
+    background-color: var(--ocean-blue);
+    opacity: 0.2; /* Molto trasparente ed elegante */
+    pointer-events: none; /* Evita che il separatore intralci i click del mouse */
+  }
+}

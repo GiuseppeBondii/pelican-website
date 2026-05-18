@@ -1,0 +1,218 @@
+/* Container Principale */
+.flowchart-container {
+    position: relative;
+    padding: 100px 0;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    min-height: 50px; /* Garantisce lo spazio per i testi "volanti" sopra e sotto */
+}
+
+/* ==============================
+   DESKTOP (Linea Orizzontale)
+============================== */
+.flow-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--ocean-blue);
+    transform: translateY(-50%); /* Centratura matematica perfetta */
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* La Freccia Direzionale (Desktop - Punta a destra) */
+.flow-line::after {
+    content: '';
+    position: absolute;
+    right: -2px; /* Fa sporgere leggermente la punta oltre la fine della linea */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Costruzione del triangolo in CSS */
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid var(--ocean-blue);
+}
+
+.flow-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Singolo Nodo */
+.flow-node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+/* I cerchi sulla linea */
+.node-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-white);
+    border: 3px solid var(--ocean-blue);
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.node-dot.main {
+    width: 24px;
+    height: 24px;
+    background-color: var(--sunset-orange);
+    border-color: var(--sunset-orange);
+    box-shadow: 0 0 0 5px rgba(255, 107, 74, 0.2);
+}
+
+.node-dot.small {
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+}
+
+.node-dot.warning {
+    border-color: var(--sunset-orange);
+    background-color: var(--sunset-orange);
+}
+
+.node-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    width: 80px;
+    line-height: 1.3;
+}
+
+.node-content.top {
+    bottom: calc(100% + 20px); /* Sempre 20px sopra al puntino */
+}
+
+.node-content.bottom {
+    top: calc(100% + 20px); /* Sempre 20px sotto al puntino */
+}
+
+.node-content span {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* Utility Classi */
+.highlight-blue { color: var(--ocean-blue); font-weight: 700; }
+.font-bold { font-weight: 800; text-transform: uppercase; color: var(--primary-black); }
+.italic { font-style: italic; }
+
+/* Alert Progressione */
+.progression-alert {
+    background: var(--primary-white);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: var(--salient-shadow);
+    border: 1px solid rgba(255, 107, 74, 0.2);
+    width: 220px !important;
+    color: var(--sunset-orange);
+    font-weight: 600;
+    font-size: 0.8rem !important;
+}
+
+.progression-alert i {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   RESPONSIVE MOBILE (Linea Verticale)
+============================== */
+@media (max-width: 992px) {
+    .flowchart-container {
+        padding: 40px 0;
+        display: block;
+    }
+
+    /* Trasformiamo la linea in asse verticale */
+    .flow-line {
+        top: 0;
+        bottom: 0;
+        left: 20px; /* Posizione fissa a sinistra */
+        width: 2px;
+        height: 100%;
+        transform: none; /* Disattiva la centratura orizzontale */
+    }
+
+    /* La Freccia Direzionale (Mobile - Punta in basso) */
+    .flow-line::after {
+        right: auto;
+        left: 50%; /* Centro esatto del tratto di 2px */
+        top: auto;
+        bottom: -5px;
+        transform: translateX(-50%);
+        /* Modifica il triangolo per farlo puntare in basso */
+        border-top: 14px solid var(--ocean-blue);
+        border-bottom: none;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+
+    .flow-steps {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px; /* Spazio a sinistra per la linea */
+        gap: 70px; /* Distanza tra gli step verticali */
+    }
+
+    .flow-node {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 60px;
+        width: 100%;
+    }
+
+    /* Centratura Matematica sul tratto verticale */
+    .node-dot {
+        position: absolute;
+        left: 20px; /* Identica alla 'left' della .flow-line */
+        top: 50%;
+        /* Trasla il puntino esattamente a metà della sua dimensione in X e Y */
+        transform: translate(-50%, -50%); 
+        margin: 0;
+    }
+
+    .node-content {
+        position: relative;
+        text-align: left;
+        width: auto;
+        bottom: auto;
+        top: auto;
+        margin: 0;
+    }
+
+    .node-content.top {
+        bottom: auto;
+    }
+
+    /* Accorpa i testi inferiori lateralmente */
+    .node-content.bottom {
+        top: auto;
+        margin-left: 20px;
+        padding-left: 20px;
+        border-left: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .progression-alert {
+        width: 100% !important;
+        max-width: 280px;
+    }
+}

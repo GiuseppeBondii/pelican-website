@@ -1,7 +1,7 @@
-import React from 'react';
-import data from '../../data/pelicanData.json';
-
-const NewsSection = () => {
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
+const NewsSection = () => { 
+   const { data } = useContext(LanguageContext);
   const { newsSection } = data.home;
 
   return (

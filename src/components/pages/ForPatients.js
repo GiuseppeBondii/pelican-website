@@ -1,8 +1,8 @@
-import React from 'react';
-import data from '../../data/pelicanData.json'; // Assicurati che il percorso del JSON sia corretto
-
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 const ForPatients = () => {
-  // Estraiamo la sezione forPatients e i suoi sottonodi dal JSON
+  const { data } = useContext(LanguageContext);
+
   const { forPatients } = data;
   const { header, sections } = forPatients;
 
@@ -44,7 +44,6 @@ const ForPatients = () => {
               ))}
             </ul>
             <p>{sections.petPsma.conclusion}</p>
-            <p><strong>{sections.petPsma.warningLabel}</strong> {sections.petPsma.warningText}</p>
           </div>
 
           {/* Sezione 3: Perché viene condotto lo studio */}
@@ -94,15 +93,6 @@ const ForPatients = () => {
             </div>
           </div>
 
-          {/* Sezione 6: Rischi, sicurezza e privacy */}
-          <div className="text-box">
-            <h3>{sections.risksPrivacy.title}</h3>
-            <ul>
-              {sections.risksPrivacy.list.map((item, index) => (
-                <li key={index}><strong>{item.label}:</strong> {item.text}</li>
-              ))}
-            </ul>
-          </div>
 
           {/* Sezione 7: FAQ */}
           <div className="text-box">

@@ -1,7 +1,8 @@
-import React from 'react';
-import data from '../../data/pelicanData.json';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const Contributors = () => {
+  const { data } = useContext(LanguageContext);
   const { contributors } = data;
 
   return (
@@ -21,6 +22,10 @@ const Contributors = () => {
                 <h3 style={{ color: 'var(--ocean-blue)', marginBottom: '5px' }}>{center.city}</h3>
                 <p style={{ color: 'var(--sunset-orange)', fontWeight: 'bold', marginBottom: '15px' }}>{center.role}</p>
                 <p style={{ color: 'var(--primary-black)' }}><strong>PI:</strong> {center.pi}</p>
+                {
+                  center['Project Manager'] &&
+                  <p style={{ color: 'var(--primary-black)' }}><strong>PM:</strong> {center['Project Manager']}</p>
+                }
               </div>
             ))}
           </div>

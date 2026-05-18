@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'; 
 
@@ -12,12 +12,15 @@ import ForPatients from './components/pages/ForPatients';
 import Contributors from './components/pages/Contributors';
 import ContactUs from './components/pages/ContactUs';
 import NotFound from './page/NotFound';
+import FriendLinks from './components/pages/FriendLinks';
 
 import ScrollObserver from './components/layout/ScrollObserver';
 import ScrollToTop from './components/layout/ScrollToTop';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
+     <LanguageProvider>
     <Router basename={process.env.PUBLIC_URL}>
 
       <ScrollObserver />
@@ -29,9 +32,11 @@ function App() {
         minHeight: '100vh',
         backgroundColor: 'var(--primary-white)' 
       }}>
+       
         <Navbar />
         
         <main style={{ flex: '1' }}>
+          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<TheProject />} />
@@ -39,14 +44,17 @@ function App() {
             <Route path="/patients" element={<ForPatients />} />
             <Route path="/contributors" element={<Contributors />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/links" element={<FriendLinks />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
+         
         </main>
         
         <Footer />
       </div>
     </Router>
+     </LanguageProvider>
   );
 }
 

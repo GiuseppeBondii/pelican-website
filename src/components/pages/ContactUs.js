@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import data from '../../data/pelicanData.json';
+import React, { useState, useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 
 const ContactUs = () => {
+  const { data } = useContext(LanguageContext);
   const { contactUs } = data;
   const [formData, setFormData] = useState({ name: '', email: '', topic: '', message: '' });
   const [status, setStatus] = useState('');

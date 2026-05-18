@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Hero from './Hero';
 import ProjectSummary from './ProjectSummary';
 import KeyNumbers from './KeyNumbers';
@@ -8,7 +8,7 @@ import NewsSection from './NewsSection';
 const Home = () => {
   return (
     <div>
-      <Hero /> {/*TODO: aggiungere Project Manager: Maria Vadalà*/}, {/*TODO: link/siti utili*/}
+      <Hero /> {/*TODO: aggiungere Project Manager: Maria Vadalà*/}
       <ProjectSummary />
       <KeyNumbers />
       <MapCenters />
