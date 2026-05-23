@@ -11,7 +11,6 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-  // Estraiamo i dati dinamicamente dal Context, senza importare il file JSON in alto
   const { language, toggleLanguage, data } = useContext(LanguageContext);
   const { navbar } = data;
 
@@ -64,12 +63,26 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li>
-            <button onClick={toggleLanguage} className="lang-toggle-btn">
-              <span className={language === 'ita' ? 'active-lang' : 'inactive-lang'}>IT</span> 
-              <span style={{ margin: '0 4px', color: 'var(--ocean-blue)', opacity: 0.5 }}>|</span> 
-              <span className={language === 'eng' ? 'active-lang' : 'inactive-lang'}>EN</span>
-            </button>
+         <li>
+            <div className="lang-selector">
+              <button 
+                onClick={() => language !== 'ita' && toggleLanguage()} 
+                className={`nav-link lang-btn ${language === 'ita' ? 'active' : ''}`}
+                aria-label="Italiano"
+              >
+                IT
+              </button>
+              
+              <span className="lang-separator">/</span>
+              
+              <button 
+                onClick={() => language !== 'eng' && toggleLanguage()} 
+                className={`nav-link lang-btn ${language === 'eng' ? 'active' : ''}`}
+                aria-label="English"
+              >
+                EN
+              </button>
+            </div>
           </li>
         </ul>
         

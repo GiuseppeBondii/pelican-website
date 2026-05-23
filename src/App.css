@@ -1035,43 +1035,52 @@
 
   /* STATO SCROLLATO: Entra il logo, i link riducono l'area massima e scivolano a destra */
   .nav-with-logo .nav-links {
-    max-width: 840px; /* Regola questo valore in pixel per decidere quanto compatti vuoi i link a destra */
+    max-width: 940px; /* Regola questo valore in pixel per decidere quanto compatti vuoi i link a destra */
   }
 
-  .lang-toggle-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
+  /* ==============================
+   SELETTORE LINGUA (NAVBAR)
+============================== */
+.lang-selector {
   display: flex;
   align-items: center;
-  padding: 8px 0;
-  margin-left: 15px;
+  gap: 8px; /* Distanza tra IT, lo slash e EN */
 }
 
-.active-lang {
-  color: var(--sunset-orange);
-  transition: color 0.3s ease;
+/* Resettiamo il bottone per farlo comportare come un tag <a> */
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  padding: 8px 2px; /* Margini laterali ridotti per tenerli vicini */
+  margin: 0;
+  outline: none;
 }
 
-.inactive-lang {
-  color: var(--primary-black);
-  opacity: 0.6;
-  transition: opacity 0.3s ease, color 0.3s ease;
+/* Se la lingua non è attiva, la facciamo apparire sbiadita */
+.lang-btn:not(.active) {
+  opacity: 0.5;
 }
 
-.inactive-lang:hover {
+/* Al passaggio del mouse torna opaca */
+.lang-btn:not(.active):hover {
   opacity: 1;
-  color: var(--ocean-blue);
 }
 
+/* Lo slash divisorio */
+.lang-separator {
+  color: var(--ocean-blue);
+  opacity: 0.3;
+  font-size: 1rem;
+  user-select: none; /* Impedisce che l'utente lo selezioni col mouse per sbaglio */
+}
+
+/* Su mobile centriamo il blocco in fondo al menu a tendina */
 @media (max-width: 1024px) {
-  .lang-toggle-btn {
-    margin-left: 0;
+  .lang-selector {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding-bottom: 25px;
   }
 }
 /* ==============================
@@ -1094,5 +1103,27 @@
     background-color: var(--ocean-blue);
     opacity: 0.2; /* Molto trasparente ed elegante */
     pointer-events: none; /* Evita che il separatore intralci i click del mouse */
+  }
+}
+
+/* ==============================
+   FIX SELETTORE LINGUA MOBILE
+============================== */
+@media (max-width: 1024px) {
+  /* 1. Diamo più spazio al menu a tendina per non tagliare l'ultimo elemento */
+  .nav-links.open {
+    max-height: 600px !important; 
+    padding-bottom: 20px !important;
+  }
+
+  /* 2. Impediamo che IT/EN si allarghino come i link di pagina */
+  .lang-selector .lang-btn {
+    display: inline-block;
+    padding: 5px 15px !important;
+  }
+
+  /* 3. Rimuoviamo lo sfondo grigio della classe "active" specifico per il mobile */
+  .lang-selector .lang-btn.active {
+    background-color: transparent !important;
   }
 }
