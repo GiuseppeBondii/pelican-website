@@ -63,17 +63,17 @@
       },
       {
         "city": "Cuneo",
-        "role": "Participant Center",
+        "role": "Participating Center",
         "pi": "Dr. Virginia Liberini"
       },
       {
         "city": "Genoa",
-        "role": "Participant Center",
+        "role": "Participating Center",
         "pi": "Dr. Matteo Bauckneht"
       },
       {
         "city": "Messina",
-        "role": "Participant Center",
+        "role": "Participating Center",
         "pi": "Dr. Riccardo Laudicella"
       }
     ],
@@ -146,7 +146,7 @@
         "steps": [
           {
             "title": "Step 1 – Initial evaluation",
-            "desc": "The doctor evaluates eligibility, explains the study in detail, and signs the informed consent."
+            "desc": "The doctor evaluates eligibility and explains the study in detail, then the informed consent is signed."
           },
           {
             "title": "Step 2 – Baseline PSMA PET",
@@ -342,9 +342,9 @@
       "title": "Participating Centers",
       "centers": [
         { "city": "Bologna", "role": "Coordinating Center" },
-        { "city": "Cuneo", "role": "Participant Center" },
-        { "city": "Genoa", "role": "Participant Center" },
-        { "city": "Messina", "role": "Participant Center" }
+        { "city": "Cuneo", "role": "Participating Center" },
+        { "city": "Genoa", "role": "Participating Center" },
+        { "city": "Messina", "role": "Participating Center" }
       ]
     },
     "newsSection": {
@@ -418,7 +418,7 @@
       },
       {
         "to": "/patients",
-        "label": "For Patients"
+        "label": "FAQ"
       },
       {
         "to": "/contributors",

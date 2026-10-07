@@ -119,7 +119,7 @@
         "title": "3. Perché viene condotto lo studio PELICAN?",
         "paragraphs": [
           "Lo studio PELICAN nasce perché oggi abbiamo molte nuove terapie efficaci per il carcinoma prostatico avanzato, ma non esiste ancora uno strumento preciso per capire in anticipo quali pazienti risponderanno meglio a una determinata terapia, quali hanno una malattia più aggressiva e quali potrebbero beneficiare di strategie terapeutiche personalizzate.",
-          "La PET PSMA permette di “vedere” le localizzazioni tumorali che esprimono PSMA, ma non è ancora chiaro se le immagini PET possono fornire anche altre informazioni preziose. La nostra ipotesi è che la PET PSMA fornisca già alcuni indizi per capire se il paziente risponderà o meno a determinate terapie e di carattere prognostico.”"
+          "La PET PSMA permette di “vedere” le localizzazioni tumorali che esprimono PSMA, ma non è ancora chiaro se le immagini PET possono fornire anche altre informazioni preziose. La nostra ipotesi è che la PET PSMA fornisca già alcuni indizi per capire se il paziente risponderà o meno a determinate terapie e di carattere prognostico."
         ]
       },
       "whoCanParticipate": {
@@ -158,7 +158,7 @@
           },
           {
             "title": "Step 4 – Follow-up clinico",
-            "desc": "Per circa 24 mesi vengono raccolti valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo e informazioni sullo stato di salute… tutto secondo la normale pratica clinica"
+            "desc": "Per circa 24 mesi vengono raccolti valori di PSA, esami del sangue, esami radiologici, eventuali visite di controllo e informazioni sullo stato di salute… tutto secondo la normale pratica clinica."
           },
           {
             "title": "Step 5 – Eventuale PET PSMA di rivalutazione",
@@ -242,7 +242,7 @@
       "title": "1. Introduzione",
       "paragraphs": [
         "Il carcinoma della prostata rappresenta la seconda neoplasia più frequente nell’uomo e una delle principali cause di mortalità oncologica a livello globale. Negli ultimi anni, l’introduzione di nuovi trattamenti sistemici – tra cui inibitori del recettore degli androgeni (abiraterone, enzalutamide, apalutamide, darolutamide), chemioterapia (docetaxel, cabazitaxel), PARP inibitori e radioligand therapy con 177Lu-PSMA-617 – ha modificato profondamente la gestione terapeutica dei pazienti affetti da malattia avanzata.",
-        "La valutazione accurata della risposta a tali terapie rimane però una sfida clinica. Gli strumenti tradizionali presentano limiti importanti: il PSA sierico può essere inattendibile in diversi scenari clinici (es.fenomeno flare, malattia a bassa secrezione di PSA, metastasi viscerali), mentre l’imaging convenzionale (TC, RM, scintigrafia ossea) mostra sensibilità e specificità insufficienti.",
+        "La valutazione accurata della risposta a tali terapie rimane però una sfida clinica. Gli strumenti tradizionali presentano limiti importanti: il PSA sierico può essere inattendibile in diversi scenari clinici (es. fenomeno flare, malattia a bassa secrezione di PSA, metastasi viscerali), mentre l’imaging convenzionale (TC, RM, scintigrafia ossea) mostra sensibilità e specificità insufficienti.",
         "La PET con traccianti diretti contro il PSMA ha mostrato invece un’elevata accuratezza diagnostica nella stadiazione e recidiva del carcinoma prostatico. Tuttavia, il suo ruolo nella valutazione della risposta alle terapie sistemiche, sebbene promettente, non è ancora stato definito in modo prospettico."
       ]
     },
@@ -265,10 +265,10 @@
       "linkText": "Vedi su ClinicalTrials.gov ➔"
     },
     "objectives": {
-      "title": "3. Obbiettivi",
-      "primaryTitle": "Obbiettivo Primario",
+      "title": "3. Obiettivi",
+      "primaryTitle": "Obiettivo Primario",
       "primaryDesc": "Determinare il valore prognostico dei parametri PET PSMA (numero lesioni, volume tumorale totale, SUVmax, SUVmean) per identificare pazienti con prognosi favorevole vs sfavorevole in termini di sopravvivenza a 24 mesi.",
-      "secondaryTitle": "Obbiettivi Secondari",
+      "secondaryTitle": "Obiettivi Secondari",
       "secondaryList": [
         "Identificare fattori predittivi di risposta.",
         "Analizzare bPFS, rPFS e OS a 24 mesi.",
@@ -276,7 +276,7 @@
       ]
     },
     "population": {
-      "title": "4.Popolazione dello studio",
+      "title": "4. Popolazione dello studio",
       "inclusion": {
         "title": "Inclusione",
         "items": [
@@ -388,8 +388,8 @@
     "step4_1":"PSA",
     "step4_2":"(ogni 4 settimane)",
     "step5":"PET PSMA in caso di sospetta progressione (PSA e/o clinica)",
-    "step6_1":"PET PSMA ",
-    "step6_2":"dopo 6 mesi dall'inizio<",
+    "step6_1":"PET PSMA",
+    "step6_2":"dopo 6 mesi dall'inizio",
     "step6_3":"PSA",
     "step7": "Follow-up"
   },
@@ -417,7 +417,7 @@
       },
       {
         "to": "/patients",
-        "label": "Pazienti"
+        "label": "FAQ"
       },
       {
         "to": "/contributors",
